@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script type="text/javascript" src="res/Resemble.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.capture("report_feature",{distinct_id:"1a3f459e-5c1f-47c7-88cb-fdfb3ccf10d1",karate_version:"1.4.1",karate_meta:null});
+  }
+});
+</script>
+
+    <title>karateapi.gamesDetails</title>
+  </head>
+  <body>
+    <div id="root-container">
+      <div id="leftnav">
+        
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">0</div>
+      <div id="nav-fail" class="bg-danger">1</div>
+    </div>
+  </div>
+  <div id="nav-env">
+    <div></div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>
+  <div id="nav-date">
+    <div>2024-02-18 09:51:50 PM</div>
+  </div>
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item failed">
+            <a href="#[1:2]"><span>[1:2]</span> <span>testing the get one Game Details</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">karateapi/gamesDetails.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">fetching Game Details</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:2]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:2]</span>
+                <span class="scenario-name">testing the get one Game Details</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>736</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref passed">4</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &#39;http://localhost:3000/games&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">93</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref passed">5</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">555</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.5">21:51:50.466 request:
+1 &gt; GET http://localhost:3000/games
+1 &gt; Host: localhost:3000
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.11 (Java/17.0.9)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+21:51:50.555 response time in milliseconds: 83
+1 &lt; 200
+1 &lt; X-Powered-By: Express
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 2773
+1 &lt; ETag: W/&quot;ad5-rXDCJGjqrat4DQyKeX28f7Q8Tz8&quot;
+1 &lt; Date: Mon, 19 Feb 2024 03:51:50 GMT
+1 &lt; Connection: keep-alive
+1 &lt; Keep-Alive: timeout=5
+{&quot;data&quot;:[{&quot;id&quot;:1,&quot;title&quot;:&quot;Assassin&#39;s Creed Valhalla&quot;,&quot;genre&quot;:&quot;Action role-playing&quot;,&quot;platform&quot;:&quot;PlayStation 5, Xbox Series X/S, PlayStation 4, Xbox One, Microsoft Windows, Stadia&quot;,&quot;release_year&quot;:2020,&quot;developer&quot;:&quot;Ubisoft Montreal&quot;,&quot;price&quot;:&quot;59.99&quot;,&quot;rating&quot;:8,&quot;review&quot;:&quot;Engaging Viking-themed adventure with stunning visuals&quot;},{&quot;id&quot;:2,&quot;title&quot;:&quot;Demon&#39;s Souls&quot;,&quot;genre&quot;:&quot;Action role-playing&quot;,&quot;platform&quot;:&quot;PlayStation 5&quot;,&quot;release_year&quot;:2020,&quot;developer&quot;:&quot;Bluepoint Games&quot;,&quot;price&quot;:&quot;69.99&quot;,&quot;rating&quot;:9,&quot;review&quot;:&quot;Stunning remake of the classic Souls game with challenging gameplay&quot;},{&quot;id&quot;:3,&quot;title&quot;:&quot;Spider-Man: Miles Morales&quot;,&quot;genre&quot;:&quot;Action-adventure&quot;,&quot;platform&quot;:&quot;PlayStation 5, PlayStation 4&quot;,&quot;release_year&quot;:2020,&quot;developer&quot;:&quot;Insomniac Games&quot;,&quot;price&quot;:&quot;49.99&quot;,&quot;rating&quot;:9,&quot;review&quot;:&quot;Exciting follow-up to Spider-Man PS4 with a new hero and storyline&quot;},{&quot;id&quot;:4,&quot;title&quot;:&quot;Ghost of Tsushima&quot;,&quot;genre&quot;:&quot;Action-adventure&quot;,&quot;platform&quot;:&quot;PlayStation 4&quot;,&quot;release_year&quot;:2020,&quot;developer&quot;:&quot;Sucker Punch Productions&quot;,&quot;price&quot;:&quot;59.99&quot;,&quot;rating&quot;:9,&quot;review&quot;:&quot;Beautiful open-world samurai game with engaging combat mechanics&quot;},{&quot;id&quot;:5,&quot;title&quot;:&quot;Cyberpunk 2077&quot;,&quot;genre&quot;:&quot;Action role-playing&quot;,&quot;platform&quot;:&quot;PlayStation 5, Xbox Series X/S, PlayStation 4, Xbox One, Microsoft Windows, Stadia&quot;,&quot;release_year&quot;:2020,&quot;developer&quot;:&quot;CD Projekt Red&quot;,&quot;price&quot;:&quot;59.99&quot;,&quot;rating&quot;:7,&quot;review&quot;:&quot;Ambitious open-world game with technical issues at launch&quot;},{&quot;id&quot;:6,&quot;title&quot;:&quot;Ratchet &amp; Clank: Rift Apart&quot;,&quot;genre&quot;:&quot;Platformer&quot;,&quot;platform&quot;:&quot;PlayStation 5&quot;,&quot;release_year&quot;:2021,&quot;developer&quot;:&quot;Insomniac Games&quot;,&quot;price&quot;:&quot;69.99&quot;,&quot;rating&quot;:9,&quot;review&quot;:&quot;Innovative platformer showcasing the power of the PS5 with dimensional rifts&quot;},{&quot;id&quot;:7,&quot;title&quot;:&quot;Halo Infinite&quot;,&quot;genre&quot;:&quot;First-person shooter&quot;,&quot;platform&quot;:&quot;Xbox Series X/S, Xbox One, Microsoft Windows&quot;,&quot;release_year&quot;:2021,&quot;developer&quot;:&quot;343 Industries&quot;,&quot;price&quot;:&quot;59.99&quot;,&quot;rating&quot;:8,&quot;review&quot;:&quot;Highly anticipated return of the iconic Halo series with new features&quot;},{&quot;id&quot;:8,&quot;title&quot;:&quot;Resident Evil Village&quot;,&quot;genre&quot;:&quot;Survival horror&quot;,&quot;platform&quot;:&quot;PlayStation 5, Xbox Series X/S, PlayStation 4, Xbox One, Microsoft Windows, Stadia&quot;,&quot;release_year&quot;:2021,&quot;developer&quot;:&quot;Capcom&quot;,&quot;price&quot;:&quot;59.99&quot;,&quot;rating&quot;:9,&quot;review&quot;:&quot;Spine-chilling horror experience set in a mysterious village&quot;},{&quot;id&quot;:9,&quot;title&quot;:&quot;Returnal&quot;,&quot;genre&quot;:&quot;Third-person shooter, roguelike&quot;,&quot;platform&quot;:&quot;PlayStation 5&quot;,&quot;release_year&quot;:2021,&quot;developer&quot;:&quot;Housemarque&quot;,&quot;price&quot;:&quot;69.99&quot;,&quot;rating&quot;:8,&quot;review&quot;:&quot;Challenging roguelike game with intense combat and procedural generation&quot;},{&quot;id&quot;:10,&quot;title&quot;:&quot;Deathloop&quot;,&quot;genre&quot;:&quot;First-person shooter&quot;,&quot;platform&quot;:&quot;PlayStation 5, Microsoft Windows&quot;,&quot;release_year&quot;:2021,&quot;developer&quot;:&quot;Arkane Studios&quot;,&quot;price&quot;:&quot;59.99&quot;,&quot;rating&quot;:8,&quot;review&quot;:&quot;Innovative time-loop mechanic in an immersive first-person shooter&quot;}],&quot;meta&quot;:{&quot;page&quot;:1}}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref passed">6</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref failed">7</div>
+      
+      <div class="step-cell failed">
+        <span>*</span>&nbsp;<span>match response.data.id == 1</span>
+      </div>
+    </div>
+    <div class="time-cell failed">89</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.7">21:51:50.688 classpath:karateapi/gamesDetails.feature:7
+* match response.data.id == 1
+match failed: EQUALS
+  $ | actual path does not exist (STRING:NUMBER)
+  &#39;#notpresent&#39;
+  1
+
+classpath:karateapi/gamesDetails.feature:7
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref skipped">8</div>
+      
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>match response.data.title == &#39;Assassin&#39;s Creed Valhalla&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment">#We are printing the Response of the API using the print keyword#</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.10">
+      <div class="step-ref skipped">10</div>
+      
+      <div class="step-cell skipped">
+        <span>Then</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment">#Reading the file ExpectedOutput.json and storing same response in variable expectedResult</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.14">
+      <div class="step-ref skipped">14</div>
+      
+      <div class="step-cell skipped">
+        <span>Given</span>&nbsp;<span>expectedResult=read(&#39;./games.json&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment">#Asserting the Actual Response with the Expected Response</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.16">
+      <div class="step-ref skipped">16</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match response == expectedResult</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

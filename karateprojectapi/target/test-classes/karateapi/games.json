@@ -1,0 +1,117 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "title": "Assassin's Creed Valhalla",
+      "genre": "Action role-playing",
+      "platform": "PlayStation 5, Xbox Series X/S, PlayStation 4, Xbox One, Microsoft Windows, Stadia",
+      "release_year": 2020,
+      "developer": "Ubisoft Montreal",
+      "price": "59.99",
+      "rating": 8,
+      "review": "Engaging Viking-themed adventure with stunning visuals"
+    },
+    {
+      "id": 2,
+      "title": "Demon's Souls",
+      "genre": "Action role-playing",
+      "platform": "PlayStation 5",
+      "release_year": 2020,
+      "developer": "Bluepoint Games",
+      "price": "69.99",
+      "rating": 9,
+      "review": "Stunning remake of the classic Souls game with challenging gameplay"
+    },
+    {
+      "id": 3,
+      "title": "Spider-Man: Miles Morales",
+      "genre": "Action-adventure",
+      "platform": "PlayStation 5, PlayStation 4",
+      "release_year": 2020,
+      "developer": "Insomniac Games",
+      "price": "49.99",
+      "rating": 9,
+      "review": "Exciting follow-up to Spider-Man PS4 with a new hero and storyline"
+    },
+    {
+      "id": 4,
+      "title": "Ghost of Tsushima",
+      "genre": "Action-adventure",
+      "platform": "PlayStation 4",
+      "release_year": 2020,
+      "developer": "Sucker Punch Productions",
+      "price": "59.99",
+      "rating": 9,
+      "review": "Beautiful open-world samurai game with engaging combat mechanics"
+    },
+    {
+      "id": 5,
+      "title": "Cyberpunk 2077",
+      "genre": "Action role-playing",
+      "platform": "PlayStation 5, Xbox Series X/S, PlayStation 4, Xbox One, Microsoft Windows, Stadia",
+      "release_year": 2020,
+      "developer": "CD Projekt Red",
+      "price": "59.99",
+      "rating": 7,
+      "review": "Ambitious open-world game with technical issues at launch"
+    },
+    {
+      "id": 6,
+      "title": "Ratchet & Clank: Rift Apart",
+      "genre": "Platformer",
+      "platform": "PlayStation 5",
+      "release_year": 2021,
+      "developer": "Insomniac Games",
+      "price": "69.99",
+      "rating": 9,
+      "review": "Innovative platformer showcasing the power of the PS5 with dimensional rifts"
+    },
+    {
+      "id": 7,
+      "title": "Halo Infinite",
+      "genre": "First-person shooter",
+      "platform": "Xbox Series X/S, Xbox One, Microsoft Windows",
+      "release_year": 2021,
+      "developer": "343 Industries",
+      "price": "59.99",
+      "rating": 8,
+      "review": "Highly anticipated return of the iconic Halo series with new features"
+    },
+    {
+      "id": 8,
+      "title": "Resident Evil Village",
+      "genre": "Survival horror",
+      "platform": "PlayStation 5, Xbox Series X/S, PlayStation 4, Xbox One, Microsoft Windows, Stadia",
+      "release_year": 2021,
+      "developer": "Capcom",
+      "price": "59.99",
+      "rating": 9,
+      "review": "Spine-chilling horror experience set in a mysterious village"
+    },
+    {
+      "id": 9,
+      "title": "Returnal",
+      "genre": "Third-person shooter, roguelike",
+      "platform": "PlayStation 5",
+      "release_year": 2021,
+      "developer": "Housemarque",
+      "price": "69.99",
+      "rating": 8,
+      "review": "Challenging roguelike game with intense combat and procedural generation"
+    },
+    {
+      "id": 10,
+      "title": "Deathloop",
+      "genre": "First-person shooter",
+      "platform": "PlayStation 5, Microsoft Windows",
+      "release_year": 2021,
+      "developer": "Arkane Studios",
+      "price": "59.99",
+      "rating": 8,
+      "review": "Innovative time-loop mechanic in an immersive first-person shooter"
+    }
+  ],
+  "meta": {
+    "page": 1
+  }
+}

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script type="text/javascript" src="res/Resemble.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.capture("report_feature",{distinct_id:"1a3f459e-5c1f-47c7-88cb-fdfb3ccf10d1",karate_version:"1.4.1",karate_meta:null});
+  }
+});
+</script>
+
+    <title>karateapi.getLoad</title>
+  </head>
+  <body>
+    <div id="root-container">
+      <div id="leftnav">
+        
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">1</div>
+      <div id="nav-fail" class="bg-danger">0</div>
+    </div>
+  </div>
+  <div id="nav-env">
+    <div></div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>
+  <div id="nav-date">
+    <div>2024-02-18 09:54:04 AM</div>
+  </div>
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1:3]"><span>[1:3]</span> <span>testing Get Todo list</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">karateapi/getLoad.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Get Todo list</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:3]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:3]</span>
+                <span class="scenario-name">testing Get Todo list</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>903</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref passed">4</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &#39;http://localhost:3000/freight-db&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">88</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref passed">5</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">815</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.5">09:54:03.632 request:
+1 &gt; GET http://localhost:3000/freight-db
+1 &gt; Host: localhost:3000
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.11 (Java/17.0.9)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+09:54:03.972 response time in milliseconds: 334
+1 &lt; 200
+1 &lt; X-Powered-By: Express
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 2508
+1 &lt; ETag: W/&quot;9cc-BdLv2OcLhx5zTf8nGtNMSX+4OvI&quot;
+1 &lt; Date: Sun, 18 Feb 2024 15:54:03 GMT
+1 &lt; Connection: keep-alive
+1 &lt; Keep-Alive: timeout=5
+{&quot;data&quot;:[{&quot;id&quot;:1,&quot;pickup_date&quot;:&quot;2024-02-15T06:00:00.000Z&quot;,&quot;truck_type&quot;:&quot;Flatbed&quot;,&quot;deadhead_o&quot;:0,&quot;origin&quot;:&quot;Phoenix AZ&quot;,&quot;trip&quot;:1068,&quot;destination&quot;:&quot;Dallas TX&quot;,&quot;company&quot;:&quot;JB Hunt Transport Inc&quot;,&quot;contact&quot;:&quot;(800)978-8028&quot;,&quot;length&quot;:53,&quot;weight&quot;:30000,&quot;rate&quot;:2200},{&quot;id&quot;:2,&quot;pickup_date&quot;:&quot;2024-02-15T06:00:00.000Z&quot;,&quot;truck_type&quot;:&quot;Refrigerated&quot;,&quot;deadhead_o&quot;:12,&quot;origin&quot;:&quot;Tempe AZ&quot;,&quot;trip&quot;:976,&quot;destination&quot;:&quot;San Antonio TX&quot;,&quot;company&quot;:&quot;Echo Global Logistics Inc&quot;,&quot;contact&quot;:&quot;(312)999-2016&quot;,&quot;length&quot;:20,&quot;weight&quot;:15000,&quot;rate&quot;:1300},{&quot;id&quot;:3,&quot;pickup_date&quot;:&quot;2024-02-15T06:00:00.000Z&quot;,&quot;truck_type&quot;:&quot;Van&quot;,&quot;deadhead_o&quot;:0,&quot;origin&quot;:&quot;Phoenix AZ&quot;,&quot;trip&quot;:430,&quot;destination&quot;:&quot;El Paso TX&quot;,&quot;company&quot;:&quot;Sun City Group Inc&quot;,&quot;contact&quot;:&quot;(915)593-5900&quot;,&quot;length&quot;:53,&quot;weight&quot;:10000,&quot;rate&quot;:600},{&quot;id&quot;:4,&quot;pickup_date&quot;:&quot;2024-02-15T06:00:00.000Z&quot;,&quot;truck_type&quot;:&quot;Flatbed&quot;,&quot;deadhead_o&quot;:0,&quot;origin&quot;:&quot;Phoenix AZ&quot;,&quot;trip&quot;:1008,&quot;destination&quot;:&quot;Austin TX&quot;,&quot;company&quot;:&quot;Source One Transportation&quot;,&quot;contact&quot;:&quot;(972)739-6844&quot;,&quot;length&quot;:53,&quot;weight&quot;:10000,&quot;rate&quot;:850},{&quot;id&quot;:5,&quot;pickup_date&quot;:&quot;2024-02-15T06:00:00.000Z&quot;,&quot;truck_type&quot;:&quot;Van&quot;,&quot;deadhead_o&quot;:0,&quot;origin&quot;:&quot;Phoenix AZ&quot;,&quot;trip&quot;:750,&quot;destination&quot;:&quot;Amarillo TX&quot;,&quot;company&quot;:&quot;Sun City Group Inc&quot;,&quot;contact&quot;:&quot;(915)593-5900&quot;,&quot;length&quot;:53,&quot;weight&quot;:20000,&quot;rate&quot;:1550},{&quot;id&quot;:6,&quot;pickup_date&quot;:&quot;2024-02-15T06:00:00.000Z&quot;,&quot;truck_type&quot;:&quot;Van&quot;,&quot;deadhead_o&quot;:178,&quot;origin&quot;:&quot;Nogalez AZ&quot;,&quot;trip&quot;:962,&quot;destination&quot;:&quot;Arlington TX&quot;,&quot;company&quot;:&quot;Langstar Ranger Inc&quot;,&quot;contact&quot;:&quot;(919)307-7089&quot;,&quot;length&quot;:53,&quot;weight&quot;:11000,&quot;rate&quot;:2300},{&quot;id&quot;:7,&quot;pickup_date&quot;:&quot;2024-02-16T06:00:00.000Z&quot;,&quot;truck_type&quot;:&quot;Refrigerated&quot;,&quot;deadhead_o&quot;:27,&quot;origin&quot;:&quot;Surprise AZ&quot;,&quot;trip&quot;:1219,&quot;destination&quot;:&quot;Spring TX&quot;,&quot;company&quot;:&quot;Circle Logistics Inc&quot;,&quot;contact&quot;:&quot;(313)800-4200&quot;,&quot;length&quot;:53,&quot;weight&quot;:20000,&quot;rate&quot;:1550},{&quot;id&quot;:8,&quot;pickup_date&quot;:&quot;2024-02-16T06:00:00.000Z&quot;,&quot;truck_type&quot;:&quot;Van&quot;,&quot;deadhead_o&quot;:294,&quot;origin&quot;:&quot;Beaumont CA&quot;,&quot;trip&quot;:1362,&quot;destination&quot;:&quot;Dallas TX&quot;,&quot;company&quot;:&quot;Mode Transportation Inc&quot;,&quot;contact&quot;:&quot;(866)712-4410&quot;,&quot;length&quot;:53,&quot;weight&quot;:30000,&quot;rate&quot;:2700},{&quot;id&quot;:9,&quot;pickup_date&quot;:&quot;2024-02-16T06:00:00.000Z&quot;,&quot;truck_type&quot;:&quot;Van&quot;,&quot;deadhead_o&quot;:245,&quot;origin&quot;:&quot;Calexico CA&quot;,&quot;trip&quot;:1593,&quot;destination&quot;:&quot;Opelousas TX&quot;,&quot;company&quot;:&quot;JB Hunt Transport Inc&quot;,&quot;contact&quot;:&quot;(800)978-8028&quot;,&quot;length&quot;:53,&quot;weight&quot;:12000,&quot;rate&quot;:3200},{&quot;id&quot;:10,&quot;pickup_date&quot;:&quot;2024-02-16T06:00:00.000Z&quot;,&quot;truck_type&quot;:&quot;Flatbed&quot;,&quot;deadhead_o&quot;:178,&quot;origin&quot;:&quot;Nogalez AZ&quot;,&quot;trip&quot;:1093,&quot;destination&quot;:&quot;San Juan TX&quot;,&quot;company&quot;:&quot;Langstar Ranger Inc&quot;,&quot;contact&quot;:&quot;(919)307-7089&quot;,&quot;length&quot;:53,&quot;weight&quot;:10000,&quot;rate&quot;:900}],&quot;meta&quot;:{&quot;page&quot;:1}}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref passed">6</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
