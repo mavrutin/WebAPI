@@ -1,0 +1,194 @@
+# pip install flask_restful
+from flask import Flask, request
+from flask_restful import Api, Resource, reqparse, fields, marshal_with
+from flask_swagger_ui import get_swaggerui_blueprint
+
+app = Flask(__name__)
+api = Api(app)
+
+# game data
+data = {}
+
+# Swagger documentation
+@app.route("/swagger")
+def swagger_api():
+    return {
+        "swagger": "2.0",
+        "info": {
+            "name": "games",
+            "description": "game API",
+            "version": "1.0"
+        },
+        "paths": {
+            "/games": {
+                "get": {
+                    "summary": "Get all games",
+                    "responses": {
+                        "200": {
+                            "description": "Success",
+                        }
+                    }
+                },
+                "post": {
+                    "summary": "Create a new game",
+                    "parameters": [
+                        {                        
+                            "name": "id",
+                            "in": "body",
+                            "description": "game ID",
+                            "required": True,
+                            "schema": {
+                                "type": "integer"
+                            }
+                        },
+                        {
+                            "name": "title",
+                            "in": "body",
+                            "description": "game title",
+                            "required": True,
+                            "schema": {
+                                "type": "string"
+                            }
+                        },
+                        {                        
+                            "name": "genre",
+                            "in": "body",
+                            "description": "genre of the game",
+                            "required": True,
+                            "schema": {
+                                "type": "string"
+                            }
+                        }
+                    ],
+                    "responses": {
+                        "201": {
+                            "description": "Game created successfully"
+                        }
+                    }
+                }
+            },
+            "/games/{id}": {
+                "get": {
+                    "summary": "Get a game by ID",
+                    "parameters": [
+                        {
+                            "name": "id",
+                            "in": "path",
+                            "description": "game ID",
+                            "required": True,
+                            "schema": {
+                                "type": "integer"
+                            }
+                        }
+                    ],
+                    "responses": {
+                        "200": {
+                            "description": "Success"
+                        }
+                    }
+                },
+                "put": {
+                    "summary": "Update a game by ID",
+                    "parameters": [
+                        {
+                            "name": "id",
+                            "in": "path",
+                            "description": "game ID",
+                            "required": True,
+                            "schema": {
+                                "type": "integer"
+                            }
+                        },
+                        {
+                            "name": "title",
+                            "in": "body",
+                            "description": "game title",
+                            "required": True,
+                            "schema": {
+                                "type": "string"
+                            }
+                        },
+ {
+                            "name": "genre",
+                            "in": "body",
+                            "description": "genre of the game",
+                            "required": True,
+                            "schema": {
+                                "type": "string"
+                            }
+                        }                    
+],
+                    "responses": {
+                        "204": {
+                            "description": "No content"
+                        }
+                    }
+                },
+                "delete": {
+                    "summary": "Delete a game by ID",
+                    "parameters": [
+                        {
+                            "name": "id",
+                            "in": "path",
+                            "description": "game ID",
+                            "required": True,
+                            "schema": {
+                                "type": "integer"
+                            }
+                        }
+                    ],
+                    "responses": {
+                        "204": {
+                            "description": "No content"
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+SWAGGER_URL = '/api/docs'
+API_URL = '/swagger'
+swaggerui_blueprint = get_swaggerui_blueprint(
+    SWAGGER_URL,
+    API_URL,
+    config={
+        'app_name': "game API"
+    }
+)
+app.register_blueprint(swaggerui_blueprint, url_prefix=SWAGGER_URL)
+
+@app.route("/games", methods=["GET", "POST"])
+def games():
+    if request.method == "GET":
+        return data
+    elif request.method == "POST":
+        game_id = request.json.get("id")
+        game_title = request.json.get("title")
+        game_genre = request.json.get("genre")
+        if game_id is None or game_title is None or game_genre is None:
+            return {"message": "Invalid request body"}, 400
+        data[game_id] = game_title + " " + game_genre
+        return {"message": "game created successfully"}, 201
+
+@app.route("/games/<int:id>", methods=["GET", "PUT", "DELETE"])
+def game(id):
+    if request.method == "GET":
+        return data.get(id)
+    elif request.method == "PUT":
+        game_title = request.json.get("title")
+game_genre = request.json.get("genre")
+        if game_title is None or game_genre is None:
+            return {"message": "Invalid request body"}, 400
+        data[id] = game_title + " " + game_genre
+        return {"message": "game updated successfully"}, 204
+    elif request.method == "DELETE":
+        if id in data:
+            del data[id]
+            return {"message": "game deleted successfully"}, 204
+        else:
+            return {"message": "game not found"}, 404
+
+if __name__ == "__main__":
+    app.run(debug=True)
